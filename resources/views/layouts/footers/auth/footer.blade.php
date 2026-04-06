@@ -9,8 +9,6 @@
                     </script>,
                     made with <i class="fa fa-heart"></i> by
                     <a href="#" class="font-weight-bold" target="_blank">Naveen Kumar</a>
-                    &
-                    <a href="#" class="font-weight-bold" target="_blank">Saket Kumar</a>
                     for a better web.
                 </div>
             </div>
@@ -20,7 +18,7 @@
                         <a href="#" class="nav-link text-muted" target="_blank">Naveen Kumar</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-muted" target="_blank">Saket Kumar</a>
+                        <!-- <a href="#" class="nav-link text-muted" target="_blank">Saket Kumar</a> -->
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link text-muted" target="_blank">About Us</a>

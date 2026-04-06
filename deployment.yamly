@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: studynerd-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: studynerd
+  template:
+    metadata:
+      labels:
+        app: studynerd
+    spec:
+      containers:
+      - name: studynerd
+        image: 885638077915.dkr.ecr.ap-south-1.amazonaws.com/studynerd
+        ports:
+        - containerPort: 80

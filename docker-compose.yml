@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: studynerd_app
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
+    environment:
+      DB_HOST: db
+      DB_DATABASE: quiz
+      DB_USERNAME: root
+      DB_PASSWORD: root
+
+  db:
+    image: mysql:5.7
+    container_name: studynerd_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: quiz
+    ports:
+      - "3307:3306"
